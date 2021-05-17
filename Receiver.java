@@ -116,15 +116,10 @@ public class Receiver implements KeyListener {
                 /* Faz a leitura do header para organizar */
                 short session = (short) (data[1] & 0xff);
                 short slices = (short) (data[2] & 0xff);
-                int maxPacketSize = (int) ((data[3] & 0xff) << 8 | (data[4] & 0xff)); // mask
-                // the
-                // sign
-                // bit
+                int maxPacketSize = (int) ((data[3] & 0xff) << 8 | (data[4] & 0xff));
+
                 short slice = (short) (data[5] & 0xff);
-                int size = (int) ((data[6] & 0xff) << 8 | (data[7] & 0xff)); // mask
-                // the
-                // sign
-                // bit
+                int size = (int) ((data[6] & 0xff) << 8 | (data[7] & 0xff));
 
                 /* SESSION_START True, configura os valores iniciais */
                 if ((data[0] & SESSION_START) == SESSION_START) {
