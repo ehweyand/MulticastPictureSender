@@ -49,7 +49,7 @@ public class Sender {
     // Parâmetros para a conexão e envio
     public static double SCALING = 0.5;
     public static int SLEEP_MILLIS = 2000;
-    public static String IP_ADDRESS = "192.168.0.9";
+    public static String IP_ADDRESS = "224.0.0.1"; //endereço multicast para criar o grupo e ter comunicação
     public static int PORT = 8000;
     public static boolean SHOW_MOUSEPOINTER = true;
 

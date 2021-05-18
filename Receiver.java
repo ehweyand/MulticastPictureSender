@@ -34,7 +34,7 @@ public class Receiver implements KeyListener {
     private static int DATAGRAM_MAX_SIZE = 65507;
 
     /* Configurações e valores para trabalhar com o envio */
-    public static String IP_ADDRESS = "192.168.0.9";
+    public static String IP_ADDRESS = "224.0.0.1"; //endereço multicast para criar o grupo e ter comunicação
     public static int PORT = 8000;
     //Configurações de exibição
     JFrame frame;
